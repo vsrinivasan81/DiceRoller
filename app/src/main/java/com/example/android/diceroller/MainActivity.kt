@@ -35,13 +35,9 @@ class MainActivity : AppCompatActivity() {
     private fun incrementCount() {
         val resultText: TextView = findViewById(R.id.result_text)
 
-        // If text is the default "Game On" set that text to 1.
         if (resultText.text == "Game On") {
             resultText.text = "1"
         } else {
-            // Otherwise, increment the number up to 6.
-            // The text value in resultText.text is an instance of the CharSequence class;
-            // it needs to be converted to a String object before it can be converted to an int.
             var resultInt = resultText.text.toString().toInt()
 
             if (resultInt < 6) {
