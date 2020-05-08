@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         if (resultText.text == "Game On") {
             resultText.text = "1"
         } else {
-            var resultInt = resultText.text.toString().toInt()
+            var resultInt:Int = resultText.text.toString().toInt()
 
             if (resultInt < 6) {
                 resultInt++
