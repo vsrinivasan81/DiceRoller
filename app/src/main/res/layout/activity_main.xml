@@ -9,13 +9,12 @@
     android:layout_gravity="center_vertical"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/result_text"
+    <ImageView
+        android:id="@+id/dice_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Game On"
-        android:textSize="30sp" />
+        android:src="@drawable/dice_1" />
 
     <Button
         android:id="@+id/roll_button"
@@ -24,7 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:text="@string/roll_label" />
 
-    <Button
+    <!-- <Button
         android:id="@+id/reset_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,5 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/count_label" />
+
+     -->
 
 </LinearLayout>
